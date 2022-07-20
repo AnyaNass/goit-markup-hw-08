@@ -1,0 +1,38 @@
+.customers {
+	@extend %section;
+	text-align: center;
+
+	&__list {
+		margin: 50px 0 0;
+		display: flex;
+		gap: 30px;
+	}
+
+	&__item {
+		border: 1px solid $icons-main-color;
+		border-radius: 4px;
+		width: 170px;
+		height: 92px;
+		transition: border $transition-variable;
+
+		&:hover,
+		&:focus {
+			border: 1px solid $accent;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 16px 0;
+	}
+
+	&__icon {
+		fill: $icons-main-color;
+		transition: fill $transition-variable;
+
+		.customers__link:hover &,
+		.customers__link:focus & {
+			fill: $accent;
+		}
+	}
+}

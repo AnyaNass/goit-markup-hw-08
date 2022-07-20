@@ -1,0 +1,9 @@
+.logo{
+	@extend %logo;
+	&__dark{
+		color: $logo-dark-theme;
+	}
+	&__light{
+		color: $logo-light-theme;
+	}
+}

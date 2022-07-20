@@ -1,0 +1,17 @@
+.join-us {
+	margin: 0 0 0 70px;
+	padding: 12px 0 0;
+	&__social-icons{
+		margin: 20px 0 0;
+	}
+	.social-icons__link--join-us{
+		background-color: rgba(255, 255, 255, 0.1);
+		transition: background-color $transition-variable;
+		&:hover, &:focus{
+			background-color: $accent;
+		}
+	}
+	.social-icons__icon--join-us{
+		fill: $icons-secondary-color;
+	}
+}

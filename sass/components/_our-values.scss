@@ -1,0 +1,40 @@
+.our-values {
+	@extend %section;
+
+	.section-title {
+		@extend %hidden;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 30px;
+	}
+
+	&__item {
+		width: 25%;
+	}
+
+	&__img {
+		padding: 25px 0;
+		background-color: $bgd-accent;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	&__content {
+		margin: 30px 0 0;
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		line-height: 1.1;
+		text-transform: uppercase;
+		color: $subtitle-dark;
+	}
+
+	&__text {
+		line-height: 1.7;
+		margin: 10px 0 0;
+	}
+}

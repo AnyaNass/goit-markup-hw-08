@@ -1,0 +1,27 @@
+.address {
+	margin: 20px 0 0;
+
+	&__item {
+		margin: 9px 0 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__link {
+		line-height: 1.7;
+		color: rgba(255, 255, 255, 0.6);
+		transition: color $transition-variable;
+
+		&:hover,
+		&:focus {
+			color: $accent;
+		}
+
+		.address__item:first-child & {
+			color: $subtitle-light;
+		}
+	}
+
+}
