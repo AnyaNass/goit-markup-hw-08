@@ -435,7 +435,7 @@ body {
   }
 }
 .banner__title {
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto;
   color: #ffffff;
   font-weight: 900;
