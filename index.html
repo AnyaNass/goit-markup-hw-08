@@ -16,7 +16,7 @@
 </head>
 
 <body id="page">
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container header__row">
 			<nav class="header__nav">
 				<a class="logo" href="/">Web<span class="logo__dark">Studio</span></a>
@@ -26,6 +26,45 @@
 					<li class="header__item"><a class="header__link" href="portfolio.html">Портфолио</a></li>
 					<li class="header__item"><a class="header__link" href="#address">Контакты</a></li>
 				</ul>
+				<button class="menu-button" type="button" data-menu-open>
+					<svg class="menu-button__icon" width="40" height="40" aria-label="Кнопка закрытия мобильного меню">
+						<use class="menu-button__open" href="./images/icons.svg#mobile-menu-open">
+						</use>
+					</svg>
+				</button>
+				<div class="mobile-nav" data-menu>
+					<button class="mobile-nav__close" type="button" data-menu-close>
+						<svg class="mobile-nav__icon" width="40" height="40" aria-label="Кнопка открытия мобильного меню">
+							<use href="./images/icons.svg#mobile-menu-close">
+							</use>
+						</svg>
+					</button>
+					<ul class="mobile-menu">
+						<li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active"
+								href="index.html">Студия</a></li>
+						<li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Портфолио</a></li>
+						<li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Контакты</a></li>
+					</ul>
+					<div class="connection">
+						<ul class="mobile-contacts">
+							<li class="mobile-contacts__item"><a class="mobile-contacts__link" href="tel:+380961111111">+38 096
+									111 11 11</a></li>
+							<li class="mobile-contacts__item"><a class="mobile-contacts__link"
+									href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+						</ul>
+						<ul class="mobile-social">
+							<li class="mobile-social__item"><a class="mobile-social__link" href="#" target="_blank"
+									rel="noopener noreferrer nofollow">Instagram</a></li>
+							<li class="mobile-social__item"><a class="mobile-social__link" href="#" target="_blank"
+									rel="noopener noreferrer nofollow">Twitter</a></li>
+							<li class="mobile-social__item"><a class="mobile-social__link" href="#" target="_blank"
+									rel="noopener noreferrer nofollow">Facebook</a></li>
+							<li class="mobile-social__item"><a class="mobile-social__link" href="#" target="_blank"
+									rel="noopener noreferrer nofollow">LinkedIn</a></li>
+						</ul>
+					</div>
+
+				</div>
 			</nav>
 			<ul class="contacts">
 				<li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
@@ -494,6 +533,7 @@
 	<script src="./js/modal.js"></script>
 	<script src="https://unpkg.com/imask"></script>
 	<script src="./js/mask.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

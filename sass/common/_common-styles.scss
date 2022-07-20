@@ -12,14 +12,26 @@ body {
 }
 
 .main {
-	padding-top: 80px;
+	padding-top: 60px;
+
+	@media (min-width: 768px) {
+		padding-top: 80px;
+	}
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 480px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@media (min-width: 768px) {
+		max-width: 768px;
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1200px;
+	}
 }
 
 .button {
@@ -39,7 +51,8 @@ body {
 
 	transition: box-shadow $transition-variable;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		box-shadow: 0px 4px 4px #00000026, inset 1px 1px 15px #fff, inset -1px -1px 15px #ffff;
 	}
 }
