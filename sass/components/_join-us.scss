@@ -1,17 +1,31 @@
 .join-us {
-	margin: 0 0 0 70px;
-	padding: 12px 0 0;
-	&__social-icons{
+	margin: 60px 0 0;
+
+	@media (min-width: 768px) {
+		margin: 0;
+		padding: 12px 0 0;
+	}
+
+	@media (min-width: 1200px) {
+		margin: 0 0 0 70px;
+	}
+
+	&__social-icons {
+		justify-content: center;
 		margin: 20px 0 0;
 	}
-	.social-icons__link--join-us{
+
+	.social-icons__link--join-us {
 		background-color: rgba(255, 255, 255, 0.1);
 		transition: background-color $transition-variable;
-		&:hover, &:focus{
+
+		&:hover,
+		&:focus {
 			background-color: $accent;
 		}
 	}
-	.social-icons__icon--join-us{
+
+	.social-icons__icon--join-us {
 		fill: $icons-secondary-color;
 	}
 }

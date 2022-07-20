@@ -3,21 +3,36 @@
 	text-align: center;
 
 	&__list {
-		margin: 50px 0 0;
+		margin: 30px 0 0;
 		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
+
+		@media (min-width: 768px) {}
+
+		@media (min-width: 1200px) {
+			margin: 50px 0 0;
+		}
 	}
 
 	&__item {
 		border: 1px solid $icons-main-color;
 		border-radius: 4px;
-		width: 170px;
+		width: 210px;
 		height: 92px;
 		transition: border $transition-variable;
 
 		&:hover,
 		&:focus {
 			border: 1px solid $accent;
+		}
+
+		@media (min-width: 768px) {
+			width: 226px;
+		}
+
+		@media (min-width: 1200px) {
+			width: 170px;
 		}
 	}
 
