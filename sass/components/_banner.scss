@@ -15,9 +15,6 @@
 	}
 
 	&__title {
-		width: 360px;
-		margin: 0 auto;
-
 		color: $subtitle-light;
 		font-weight: 900;
 		font-size: 26px;
@@ -27,6 +24,7 @@
 
 		@media (min-width: 768px) {
 			width: 696px;
+			margin: 0 auto;
 			font-size: 44px;
 			line-height: 1.3;
 		}

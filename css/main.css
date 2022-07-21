@@ -436,8 +436,6 @@ body {
   }
 }
 .banner__title {
-  width: 360px;
-  margin: 0 auto;
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
@@ -448,6 +446,7 @@ body {
 @media (min-width: 768px) {
   .banner__title {
     width: 696px;
+    margin: 0 auto;
     font-size: 44px;
     line-height: 1.3;
   }
