@@ -7,12 +7,19 @@
 
 	&__buttons-list {
 		display: flex;
-		justify-content: center;
 		column-gap: 8px;
+		row-gap: 15px;
+		flex-wrap: wrap;
+
+		@media (min-width: 768px) {
+			justify-content: center;
+		}
 	}
 
 	&__btn {
 		padding: 6px 22px;
+		min-width: 70px;
+		min-height: 38px;
 		border-radius: 4px;
 		font-weight: 500;
 		font-size: 16px;
@@ -38,15 +45,33 @@
 	}
 
 	&__cards-list {
-		margin: 50px 0 0;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 30px;
+		margin: 40px 0 0;
+
+		@media (min-width: 768px) {
+			margin: 50px 0 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+		}
 	}
 
 	&__card {
-		width: 370px;
+		margin: 30px 0 0;
 		background: $main-bgd-color;
+
+		&:first-child {
+			margin: 0;
+		}
+
+		@media (min-width: 768px) {
+			width: 354px;
+			margin: 0;
+		}
+
+		@media (min-width: 1200px) {
+			width: 370px;
+		}
+
 	}
 
 	&__link {
@@ -69,13 +94,23 @@
 		top: 0;
 		bottom: 0;
 		left: 0;
-		padding: 63px 24px;
+		padding: 77px 24px;
 		background-color: rgba(33, 150, 243, 0.9);
 		transform: translateY(100%);
 		transition: transform $transition-variable;
 
-		.portfolio__link:hover &, .portfolio__link:focus &{
+		.portfolio__link:hover &,
+		.portfolio__link:focus & {
 			transform: translateY(0%);
+		}
+
+		@media (min-width: 768px) {
+			padding-top: 49px;
+		}
+
+		@media (min-width: 1200px) {
+			padding-top: 63px;
+			padding-bottom: 63px;
 		}
 	}
 

@@ -72,6 +72,7 @@
 					height: 4px;
 					background-color: $accent;
 					border-radius: 2px;
+
 					@media (min-width: 1200px) {
 						bottom: -33px;
 					}
@@ -129,6 +130,10 @@
 	background-color: $main-bgd-color;
 	transform: translateY(-100%);
 	transition: transform $transition-variable;
+
+	@media (min-width: 768px) {
+		display: none;
+	}
 
 	&.is-open {
 		transform: translateY(0%);

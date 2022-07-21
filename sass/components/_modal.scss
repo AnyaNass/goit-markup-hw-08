@@ -20,7 +20,9 @@
 		visibility: hidden;
 
 		& .modal {
-			transform: translate(-50%, -50%) scale(1.2);
+			@media (min-width: 768px) {
+				transform: translate(-50%, -50%) scale(1.2);
+			}
 		}
 	}
 }
@@ -141,6 +143,10 @@
 		line-height: calc(24 / 14);
 		color: $main-text-color;
 		font-size: 12px;
+
+		@media (min-width: 1200px) {
+			font-size: 14px;
+		}
 	}
 
 	&__link {
@@ -149,8 +155,13 @@
 		text-decoration-line: underline;
 		color: $accent;
 		font-size: 12px;
+
 		@media (min-width: 768px) {
 			margin: 0 0 0 5px;
+		}
+
+		@media (min-width: 1200px) {
+			font-size: 14px;
 		}
 	}
 

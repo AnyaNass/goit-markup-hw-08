@@ -286,6 +286,11 @@ body {
   transform: translateY(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
 .mobile-nav.is-open {
   transform: translateY(0%);
 }
@@ -471,8 +476,10 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
+@media (min-width: 768px) {
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 }
 
 .modal {
@@ -577,6 +584,11 @@ body {
   color: #757575;
   font-size: 12px;
 }
+@media (min-width: 1200px) {
+  .form__agreement {
+    font-size: 14px;
+  }
+}
 .form__link {
   display: inline-block;
   margin: 0 0 0 3px;
@@ -588,6 +600,11 @@ body {
 @media (min-width: 768px) {
   .form__link {
     margin: 0 0 0 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__link {
+    font-size: 14px;
   }
 }
 .form__checkbox-icon {
@@ -944,12 +961,20 @@ body {
 
 .portfolio__buttons-list {
   display: flex;
-  justify-content: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .portfolio__buttons-list {
+    justify-content: center;
+  }
 }
 .portfolio__btn {
   padding: 6px 22px;
+  min-width: 70px;
+  min-height: 38px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -969,14 +994,33 @@ body {
   color: #ffffff;
 }
 .portfolio__cards-list {
-  margin: 50px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  margin: 40px 0 0;
+}
+@media (min-width: 768px) {
+  .portfolio__cards-list {
+    margin: 50px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .portfolio__card {
-  width: 370px;
+  margin: 30px 0 0;
   background: #ffffff;
+}
+.portfolio__card:first-child {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .portfolio__card {
+    width: 354px;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio__card {
+    width: 370px;
+  }
 }
 .portfolio__link {
   display: block;
@@ -994,13 +1038,24 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__link:hover .portfolio__overlay, .portfolio__link:focus .portfolio__overlay {
   transform: translateY(0%);
+}
+@media (min-width: 768px) {
+  .portfolio__overlay {
+    padding-top: 49px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio__overlay {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
 .portfolio__text {
   font-size: 18px;
