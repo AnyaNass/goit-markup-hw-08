@@ -94,7 +94,7 @@
 		top: 0;
 		bottom: 0;
 		left: 0;
-		padding: 77px 24px;
+		padding: 15px 24px;
 		background-color: rgba(33, 150, 243, 0.9);
 		transform: translateY(100%);
 		transition: transform $transition-variable;
@@ -102,6 +102,10 @@
 		.portfolio__link:hover &,
 		.portfolio__link:focus & {
 			transform: translateY(0%);
+		}
+
+		@media (min-width: 480px) {
+			padding: 77px 24px;
 		}
 
 		@media (min-width: 768px) {
@@ -115,9 +119,12 @@
 	}
 
 	&__text {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.5;
 		color: $light-text;
+		@media (min-width: 480px) {
+			font-size: 18px;
+		}
 	}
 
 	&__description {
