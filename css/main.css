@@ -509,11 +509,16 @@ body {
 }
 
 .modal {
-  padding: 40px;
+  padding: 25px 20px;
   text-align: left;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media (min-width: 480px) {
+  .modal {
+    padding: 40px;
+  }
 }
 @media (min-width: 768px) {
   .modal {
@@ -533,8 +538,8 @@ body {
 }
 .modal__close-btn {
   position: absolute;
-  top: -32px;
-  right: -32px;
+  top: -24px;
+  right: -18px;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -542,6 +547,12 @@ body {
   border-radius: 50%;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 480px) {
+  .modal__close-btn {
+    top: -32px;
+    right: -32px;
+  }
 }
 .modal__close-icon {
   vertical-align: middle;
@@ -602,13 +613,18 @@ body {
   resize: none;
 }
 .form__agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   margin: 20px 0 0;
   line-height: 1.7142857143;
   color: #757575;
   font-size: 12px;
+}
+@media (min-width: 440px) {
+  .form__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (min-width: 1200px) {
   .form__agreement {
@@ -636,6 +652,7 @@ body {
 .form__checkbox-icon {
   position: relative;
   margin: 0 8px 0 0;
+  display: inline-block;
   width: 16px;
   height: 15px;
   background-color: transparent;
