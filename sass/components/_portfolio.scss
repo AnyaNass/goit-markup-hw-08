@@ -75,7 +75,9 @@
 	}
 
 	&__link {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		transition: box-shadow $transition-variable;
 
 		&:hover,
@@ -128,6 +130,7 @@
 	}
 
 	&__description {
+		flex-grow: 1;
 		border: 1px solid #EEEEEE;
 		border-top: none;
 		padding: 20px 24px;
