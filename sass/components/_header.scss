@@ -128,7 +128,6 @@
 	justify-content: space-between;
 	padding: 48px 40px;
 	background-color: $main-bgd-color;
-	opacity: 0;
 	transform: translateY(-100%);
 	transition: transform $transition-variable;
 
@@ -137,7 +136,6 @@
 	}
 
 	&.is-open {
-		opacity: 1;
 		transform: translateY(0%);
 	}
 
