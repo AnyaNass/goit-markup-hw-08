@@ -128,7 +128,7 @@
 	justify-content: space-between;
 	padding: 48px 40px;
 	background-color: $main-bgd-color;
-	transform: translateY(-100%);
+	transform: translateY(-150%);
 	transition: transform $transition-variable;
 
 	@media (min-width: 768px) {
