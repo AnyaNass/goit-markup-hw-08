@@ -206,9 +206,13 @@
 		}
 
 		.mobile-contacts__item:first-child & {
-			font-size: 34px;
+			font-size: 27px;
 			line-height: calc(40 / 34);
 			color: $accent;
+
+			@media (min-width: 377px) {
+				font-size: 34px;
+			}
 		}
 	}
 }

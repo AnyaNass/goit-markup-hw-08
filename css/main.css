@@ -345,9 +345,14 @@ body {
   text-decoration: underline;
 }
 .mobile-contacts__item:first-child .mobile-contacts__link {
-  font-size: 34px;
+  font-size: 27px;
   line-height: 1.1764705882;
   color: #2196F3;
+}
+@media (min-width: 377px) {
+  .mobile-contacts__item:first-child .mobile-contacts__link {
+    font-size: 34px;
+  }
 }
 
 .mobile-social {
