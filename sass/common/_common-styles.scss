@@ -5,10 +5,10 @@ body {
 	background-color: var(--white);
 	letter-spacing: 0.03em;
 	user-select: none;
-}
 
-.no-scroll {
-	overflow: hidden;
+	&.no-scroll {
+		overflow: hidden;
+	}
 }
 
 .main {
