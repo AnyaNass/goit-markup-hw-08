@@ -4,16 +4,22 @@
 	margin: 0 auto;
 	text-align: center;
 
-	background-color: $bgd-accent;
+	background-color: $banner-reserve-bgd;
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)), url('../images/banner/banner-mobile.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 
-	@media screen and (min-device-pixel-ratio: 2),
-	screen and (min-resolution: 192dpi),
-	screen and (min-resolution: 2dppx) {
+	// @media screen and (min-device-pixel-ratio: 2),
+	// screen and (min-resolution: 192dpi),
+	// screen and (min-resolution: 2dppx) {
+	// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+	// 			rgba(47, 48, 58, 0.4)),
+	// 		url('../images/banner/banner-mobile@2x.jpg');
+	// }
+
+	@include mq(retina) {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
 				rgba(47, 48, 58, 0.4)),
 			url('../images/banner/banner-mobile@2x.jpg');
@@ -23,9 +29,7 @@
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
 				rgba(47, 48, 58, 0.4)), url('../images/banner/banner-tablet.jpg');
 
-		@media screen and (min-device-pixel-ratio: 2),
-		screen and (min-resolution: 192dpi),
-		screen and (min-resolution: 2dppx) {
+		@include mq(retina) {
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
 					rgba(47, 48, 58, 0.4)),
 				url('../images/banner/banner-tablet@2x.jpg');
@@ -36,9 +40,7 @@
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
 				rgba(47, 48, 58, 0.4)), url('../images/banner/banner-desktop.jpg');
 
-		@media screen and (min-device-pixel-ratio: 2),
-		screen and (min-resolution: 192dpi),
-		screen and (min-resolution: 2dppx) {
+		@include mq(retina) {
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
 					rgba(47, 48, 58, 0.4)),
 				url('../images/banner/banner-desktop@2x.jpg');
